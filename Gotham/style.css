@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+
+=== Made by github.com/iMonstaa ===
+
+    - Time it took: ~5h 30min
+    - What I learned: 
+        = Flex
+        = Grid
+        = scrollbar webkit
+
+*/
+
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+/*===================== GENERAL =====================*/
+
+.font-proxima{
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.bolder{
+    font-weight: 400;
+}
+
+.light{
+    font-weight: 200;
+}
+
+.fa{
+    color:#999999;
+}
+
+/*===================== HEADER =====================*/
+
+.header{
+    width: 100%;
+    height: 66px;
+    background-color:#F8CC33;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.navBar{
+    width: 400px;
+    margin-top: 24px;
+    height: 16px;
+}
+
+.navContainer{
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navItems{
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 300;
+    color:#000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.navItems:hover{
+    transition: 0.3s;
+    filter:invert(100);
+}
+
+.ml{
+    margin-left: 60px;
+}
+
+.mr{
+    margin-right: 60px;
+}
+
+.centerLogo{
+    width: 169px;
+    margin:0 auto;
+}
+
+.logo{
+    height: 28px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    cursor: pointer;
+    filter:invert(100);
+    transition: 0.3s;
+}
+
+/*===================== CONTENT =====================*/
+
+.content{
+    width: 100%;
+    height: 1500px;
+}
+
+/*===================== ARTICLES =====================*/
+
+.articles{
+    width: 900px;
+    background-color: #fff;
+    height: 1500px;
+    border-right: 1px solid #DCDCDC;
+    padding-top: 44px;
+}
+
+.article{
+    height: 187px;
+    width: 870px;
+    /*background-color: #f3f3f3;*/
+    margin-top: 18px;
+    margin-bottom: 65px;
+}
+
+/*-----*/
+
+.thumb{
+    height: 187px;
+    width: 270px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.thumb img{
+    transition: 0.3s;
+}
+
+.thumb:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*-----*/
+
+.articleInfoBar{
+    width: 570px;
+}
+
+.articleTitle{
+    font-size: 26px;
+    margin-bottom: 10px;
+    color:#333333;
+}
+
+.articleTitle:hover{
+    color:#F7C61D;
+}
+
+/*-*/
+
+.articleInfo{
+    font-size: 14px;
+    color: #999999;
+    margin-right: 5px;
+}
+
+.articleInfo:hover{
+    color:#767676;
+}
+
+.articleCategory{
+    color:#F7C61D;
+    font-size: 14px;
+}
+
+.articleCategory:hover{
+    color:#ceaa27;
+    cursor: pointer;
+}
+
+/*-*/
+
+.articleShort{
+    margin-top: 10px;
+    color:#777777;
+    font-size: 16px;
+}
+
+.articleShort:hover{
+    filter: brightness(85%);
+}
+
+.fa-angle-right{
+    color:#F7C61D;
+}
+
+/*-*/
+
+.viewcomm{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.viewcomm:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+.views{
+    color:#999999;
+}
+
+.comments{
+    color:#F7C61D;
+}
+
+.views::after{
+    content:"";
+    display:inline-block;
+    height:10px;
+    width:2px;
+    background-color:#dbdbdb;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/*---*/
+
+.moreButton{
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #F7C61D;
+    width: 171px;
+    height: 42px;
+    font-size: 14px;
+    padding: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.moreButton:hover{
+    cursor: pointer;
+    background-color: #F7C61D;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/*===================== SIDE BAR =====================*/
+
+.sideBar{
+    width: 270px;
+    background-color: #fff;
+    height:1500px;
+    padding-top: 84px;
+    text-align: center;
+}
+
+.search{
+    width: 240px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    border: 1px solid #DCDCDC;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.search input, .search input:active{
+    width: 200px;
+    border: none;
+    outline: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background: #fff;
+}
+
+.search button, .search button:visited, .search button:active, .search button:hover{
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background: #fff;
+}
+
+.fa-search{
+    color:#333333;
+    transition: 0.3s;
+}
+
+.fa-search:hover{
+    color:#F7C61D;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+/*---*/
+
+.calendar{
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 0;
+    width: 240px;
+    height: 240px;
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.month{
+    padding: 10px;
+    height: 40px;
+    color: #333333;
+    background-color: #fff;
+}
+
+.month>.fa-angle-right{
+    margin-left: 60px;
+    color:#DCDCDC;
+}
+
+.month>.fa-angle-left{
+    margin-right: 60px;
+    color:#DCDCDC;
+}
+
+.month i:hover{
+    cursor: pointer;
+}
+
+/*-*/
+
+.days{
+    display: flex;
+    width: 240;
+    font-size: 12px;
+}
+
+.day{
+    width: 34px;
+    height: 30px;
+    background-color: #DCDCDC;
+    border-left: 1px solid #fff;
+}
+
+.day>h3{
+    margin-top: 6px;
+    font-weight: 700;
+    color:#999999;
+}
+
+.days>div:first-of-type{
+    border-left: none;
+}
+
+/*-*/
+
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(7, 34px);
+    width: 240;
+    font-size: 12px;
+}
+
+.numbers>div:nth-of-type(7n+1){
+    border-left: none;
+}
+
+.number{
+    width: 34px;
+    height: 33.5px;
+    border-top: 1px solid #DCDCDC;
+    border-left:1px solid #dcdcdc;
+}
+
+.number>h3{
+    margin-top: 9px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.number:hover{
+    cursor:pointer;
+}
+
+.number:hover>h3{
+    filter:brightness(300%);
+}
+
+.inactive>h3{
+    color: #dcdcdc;
+}
+
+.active{
+    background-color:#F8CC33
+}
+
+/*---*/
+
+.popularNews{
+    margin-left: auto;
+    margin-right: 0;
+    width: 240px;
+    margin-top: 44px;
+}
+
+.popularNews>h3{
+    float:left; 
+}
+
+.popularNews>h3::after{
+    content: "";
+    background-color: #DCDCDC;
+    float: right;
+    width: 117px;
+    height: 1px;
+    margin-top:12px;
+    margin-left: 5px;
+    margin-bottom: 27px;
+}
+
+/*---*/
+
+.popularNew{
+    display: block;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.popularNew>a{
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+}
+
+.popularNew>a:hover{
+    color:#F7C61D;
+}
+
+.popularNew>h5{
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+/*===================== FOOTER =====================*/
+
+.footer{
+    width: 100%;
+    height: 66px;
+    background-color: #F8CC33;
+    bottom: 0;
+}
+
+.copyrightText{
+    margin-top: 26px;
+    font-size: 12px;
+    color:#333333;
+}
+
+.footerNav{
+    margin: 0 auto;
+    height: 14px;
+    width: 350px;
+    padding-top: 24px;
+}
+
+.footerNavItems{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.botIcons{
+    margin-top: -10px;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.botIcons:hover{
+    cursor: pointer;
+    filter: brightness(10);
+    transition: 0.3s;
+}
